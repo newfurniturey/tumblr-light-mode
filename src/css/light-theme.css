@@ -1,0 +1,81 @@
+.identity,
+.l-content,
+.left_column,
+.right_column,
+.post_avatar {
+    background-color: #e9ebee !important;
+}
+
+.sidebar_link,
+.tumblelog_name {
+    color: #000 !important;
+}
+
+.identity .right_column:after {
+    background: none !important;
+}
+
+/**
+ * Post: corner overlaps
+ */
+.post_full .post_permalink {
+    border-color: #e9ebee #e9ebee transparent transparent !important;
+}
+
+/**
+ * Recommended Blogs
+ */
+.controls_section {
+    background-color: #fff !important;
+    color: #000;
+    border: 1px solid #bbb !important;
+}
+
+.identity .controls_section.user_list li .follow_list_item_blog:before {
+    background-image: none !important;
+    border-right: 0px !important;
+}
+
+.identity .controls_section.user_list li .follow_list_item_blog .tumblelog_title,
+li.section_header {
+    color: #000 !important;
+}
+
+.identity .controls_section.follow_list.recommended_tumblelogs,
+.identity .controls_section.follow_list.trending_tumblelogs {
+    padding-right: 0px !important;
+}
+
+/**
+ * Radar
+ */
+.radar {
+    background-color: #fff !important;
+    border: 1px solid #bbb !important;
+    border-top: 0px !important;
+}
+
+.controls_section_radar {
+    border: 1px solid #bbb !important;
+    border-bottom: 0px !important;
+}
+
+.radar .radar_footer .radar_avatar::before {
+    background-image: none !important
+}
+
+.radar .radar_tumblelog_label .name,
+.radar .radar_tumblelog_label .subheading {
+    color: #000 !important;
+}
+
+
+/**
+ * Notifications
+ */
+.notification .notification_sentence,
+.notification .notification_sentence a,
+.notification .notification_sentence .username,
+.notification .notification_sentence .banner_text {
+    color: #36465d !important;
+}
