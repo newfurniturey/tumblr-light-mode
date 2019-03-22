@@ -1,5 +1,5 @@
 {
-    "name": "Tumblr Light",
+    "name": "Tumblr Light Mode",
     "version": "1.0",
     "description": "Tired of dark memes? Lighten up!",
     "manifest_version": 2,
@@ -10,5 +10,10 @@
         "css": [
             "css/light-theme.css"
         ]
-    }]
+    }],
+    "icons": {
+        "128": "images/icon_128x128.png",
+        "16": "images/icon_16x16.png",
+        "48": "images/icon_48x48.png"
+    }
 }

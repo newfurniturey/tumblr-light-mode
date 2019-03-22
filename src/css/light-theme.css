@@ -1,18 +1,77 @@
+/**
+ * Main theme elements
+ */
 .identity,
 .l-content,
 .left_column,
 .right_column,
-.post_avatar {
+.post_avatar,
+.search_results_container .tumblelog_mask_item {
     background-color: #e9ebee !important;
 }
 
 .sidebar_link,
-.tumblelog_name {
+.tumblelog_name,
+.well,
+.identity .controls_section .control-anchor,
+.identity .controls_section a .count,
+.identity .controls_section .open_blog .currently_selected_blog,
+.identity .controls_section .open_blog .open_blog_link,
+.controls_section .controls_item_anchor,
+.identity .right_column .small_text,
+.identity .controls_section .delete_all_messages,
+.l-footer .footer_links .footer_link a,
+.no_posts_found {
     color: #000 !important;
 }
 
 .identity .right_column:after {
     background: none !important;
+}
+
+.post-forms-glass,
+body.flag--always-opaque-peepr .ui_peepr_glass {
+    background-color: rgba(90, 105, 130, .85) !important;
+}
+
+.elevator {
+    color: #36465d !important;
+}
+
+.discover_actions_discover .elevator,
+.search_actions_search .elevator {
+    background-color: transparent !important;
+}   
+
+.tab-notice--outlined {
+    border-color: #36465d !important;
+}
+
+/**
+ * Top nav / search bar
+ */
+.l-header-container--refresh .l-header {
+    max-width: 1024px !important;
+}
+
+.ui_search .search_form_field,
+.search_popover {
+    max-width: 450px !important;
+}
+
+body.discover .l-header-container--refresh .l-header,
+body.search .l-header-container--refresh .l-header {
+    max-width: 1580px !important;
+}
+
+body.discover .ui_search .search_form_field,
+body.search .ui_search .search_form_field {
+    max-width: 540px !important;
+}
+
+body.discover .search_popover,
+body.search .search_popover {
+    max-width: 540px !important;
 }
 
 /**
@@ -28,7 +87,6 @@
 .controls_section {
     background-color: #fff !important;
     color: #000;
-    border: 1px solid #bbb !important;
 }
 
 .identity .controls_section.user_list li .follow_list_item_blog:before {
@@ -46,17 +104,55 @@ li.section_header {
     padding-right: 0px !important;
 }
 
+.rapid-recs-container .rapid-recs {
+    background-image: none !important;
+    background-color: #fff !important;
+    padding: 15px 0px !important;
+}
+
+.rapid-recs-container .rapid-recs .rapid-rec-title {
+    color: #000 !important;
+}
+
+.discover .tags-and-tumblelogs .discover-tumblelogs .show-more-blogs,
+.discover .discover-section-title,
+.identity .right_column .small_links a {
+    color: #36465d !important;
+}
+
+a.sidebar_link {
+    background-color: #fff !important;
+    width: 100% !important;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    text-align: center !important;
+    border-top: 1px solid #eee !important;
+}
+
+a.sidebar_link:hover,
+.identity .controls_section.follow_list.recommended_tumblelogs > li.item:hover {
+    background-color: #dcecf5 !important;
+}
+
+.identity .controls_section > li.section_header,
+.identity .controls_section > li.item {
+    border-bottom: 1px solid #eee !important;
+}
+
+.pinned_sidebar_footer .sidebar_link,
+.pinned_sidebar_footer .sidebar_link:hover {
+    background-color: transparent !important;
+}
+
 /**
  * Radar
  */
 .radar {
     background-color: #fff !important;
-    border: 1px solid #bbb !important;
     border-top: 0px !important;
 }
 
 .controls_section_radar {
-    border: 1px solid #bbb !important;
     border-bottom: 0px !important;
 }
 
@@ -69,6 +165,74 @@ li.section_header {
     color: #000 !important;
 }
 
+.identity .controls_section > li.section_header {
+    border-bottom: 1px solid #eee !important;
+}
+
+/**
+ * Sidebar Ads
+ */
+.sidebar-ad {
+    background-color: #fff !important;
+}
+
+/**
+ * Tracked Tags
+ */
+.right_column .tag_controls {
+    background-color: #fff !important;
+    border-bottom: 1px solid rgb(238, 238, 238) !important;
+    
+}
+
+.right_column .tag_controls .tag_wrapper {
+    border-bottom: 1px solid rgb(238, 238, 238) !important;
+}
+
+.right_column .tag_controls .tag {
+    color: #000 !important;
+}
+
+.right_column .tag_controls .track_tag_wrapper {
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.right_column .tag_controls .track_tag_wrapper a {
+    color: #000 !important;
+    text-align: center !important;
+}
+
+.right_column .related_tags {
+    margin-bottom: 15px !important;
+}
+
+.right_column .related_tags .tag {
+    color: #000 !important;
+}
+
+.right_column .tag_controls .track_tag_wrapper:hover,
+.right_column .related_tags > li.item:hover,
+.related_tags_show_more:hover {
+    background-color: #dcecf5 !important;
+}
+
+.related_tags_show_more {
+    text-align: center !important;
+    background-color: #fff !important;
+    margin-bottom: 15px !important;
+    margin-top: -15px !important;
+    padding-bottom: 5px !important;
+}
+
+.show_more_related_tags {
+    float: none !important;
+}
+
+.related_tags_show_more .hide_overflow {
+    display: inline !important;
+}
 
 /**
  * Notifications
@@ -78,4 +242,63 @@ li.section_header {
 .notification .notification_sentence .username,
 .notification .notification_sentence .banner_text {
     color: #36465d !important;
+}
+
+.toastr .toast {
+    color: #000 !important;
+    background: #fff !important;
+}
+
+
+/**
+ * Search
+ */
+.discover-tumblelogs,
+.discover-tags {
+    background-color: #fff !important;
+}
+
+.discover-section-title {
+    border-bottom: 1px solid #eee !important;
+}
+
+.discover-tumblelogs .controls_section > li.item {
+    border-bottom: 1px solid #eee !important;
+}
+
+.discover .discover-search-terms {
+    margin: 0px !important;
+}
+
+.show-more-blogs {
+    background-color: #fff !important;
+    width: 100% !important;
+    margin-left: 0px !important;
+    margin-top: -1px !important;
+    text-align: center !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.show-more-blogs:hover,
+.discover-tumblelogs .controls_section > li.item:hover {
+    background-color: #dcecf5 !important;
+}
+
+.search_sub_header .search_term_heading,
+.results_end_body,
+.search_control_items .launch_button,
+.search_control_items .launch_button .icon_arrow_carrot_down,
+.search_control_items .open .launch_button,
+.search_control_items .open .launch_button .icon_arrow_carrot_down,
+.results_end_body .search_query_highlight,
+.search_control.post_layout .active,
+.search_sub_header .search_control.related_searches,
+.search_sub_header .search_control.related_searches .search_control_link {
+    color: #000 !important;
+}
+
+.search_controls .search_control_button,
+.search_controls .search_control_link {
+    color: rgba(0, 0, 0, .5) !important;
 }
