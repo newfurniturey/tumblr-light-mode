@@ -9,3 +9,13 @@ appearance?
 **Tumblr Light Mode** is a Chrome Extension to provide you with just that!
 
 With this extension enabled, anytime you browse Tumblr from Chrome it will be shown with a much lighter theme!
+
+## Contributing
+
+Feel free to submit an Issue or open a Pull Request =]
+
+For more information please refer to [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+MIT
